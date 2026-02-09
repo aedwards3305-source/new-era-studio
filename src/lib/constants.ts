@@ -24,6 +24,7 @@ export const FOOTER_LINKS = {
     { label: 'Closures', href: '/shop?type=closures-frontals' },
     { label: 'Wigs', href: '/shop?type=wigs' },
     { label: 'Best Sellers', href: '/shop?sort=best-selling' },
+    { label: 'Gift Cards', href: '/gift-cards' },
   ],
   help: [
     { label: 'Hair Guide', href: '/hair-guide' },

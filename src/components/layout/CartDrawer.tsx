@@ -8,6 +8,7 @@ import { XMarkIcon, MinusIcon, PlusIcon, TrashIcon } from '@heroicons/react/24/o
 import { useCart } from '@/context/CartContext';
 import { formatPrice } from '@/lib/utils';
 import { GLOSSGENIUS_BOOKING_URL, FREE_SHIPPING_THRESHOLD } from '@/lib/constants';
+import { BNPLBadge } from '@/components/shared/BNPLBadge';
 
 interface CartDrawerProps {
   open: boolean;
@@ -160,6 +161,9 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
                   <span className="text-lg font-display font-medium">
                     {formatPrice(cart.subtotal)}
                   </span>
+                </div>
+                <div className="mb-2">
+                  <BNPLBadge price={cart.subtotal} compact />
                 </div>
                 <p className="text-xs text-brand-gray-500 text-center">
                   Shipping & taxes calculated at checkout

@@ -8,6 +8,7 @@ import { formatPrice } from '@/lib/utils';
 import { BookInstallCTA } from '@/components/shared/BookInstallCTA';
 import { BookInstallModal } from '@/components/shared/BookInstallModal';
 import { TrustBadges } from '@/components/shared/TrustBadges';
+import { BNPLBadge } from '@/components/shared/BNPLBadge';
 import { CartUpsells } from './CartUpsells';
 import { FREE_SHIPPING_THRESHOLD, GLOSSGENIUS_BOOKING_URL } from '@/lib/constants';
 import { createCheckout } from '@/lib/shopify';
@@ -225,6 +226,10 @@ export function CartPageContent() {
                   <span className="text-sm font-body font-semibold">Estimated Total</span>
                   <span className="text-lg font-display font-medium">{formatPrice(total)}</span>
                 </div>
+              </div>
+
+              <div className="mb-4">
+                <BNPLBadge price={total} compact />
               </div>
 
               <button

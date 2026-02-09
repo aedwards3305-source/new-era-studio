@@ -5,6 +5,7 @@ import { Product, ProductVariant } from '@/lib/types';
 import { useCart } from '@/context/CartContext';
 import { formatPrice, getDiscountPercentage } from '@/lib/utils';
 import { GLOSSGENIUS_BOOKING_URL } from '@/lib/constants';
+import { BNPLBadge } from '@/components/shared/BNPLBadge';
 
 interface ProductInfoProps {
   product: Product;
@@ -88,7 +89,7 @@ export function ProductInfo({ product, onBookInstall }: ProductInfoProps) {
       </div>
 
       {/* Price */}
-      <div className="flex items-center gap-3 mb-6">
+      <div className="flex items-center gap-3 mb-2">
         <span className="text-2xl font-display font-medium">{formatPrice(price)}</span>
         {compareAt && (
           <>
@@ -100,6 +101,11 @@ export function ProductInfo({ product, onBookInstall }: ProductInfoProps) {
             </span>
           </>
         )}
+      </div>
+
+      {/* BNPL */}
+      <div className="mb-6">
+        <BNPLBadge price={price} />
       </div>
 
       {/* Description */}

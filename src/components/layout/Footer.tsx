@@ -155,14 +155,21 @@ export function Footer() {
               <span className="text-xs text-white/30 font-body">
                 Secure Payments
               </span>
-              {/* Payment icons placeholder */}
-              <div className="flex items-center gap-2">
-                {['Visa', 'MC', 'Amex', 'PayPal'].map((card) => (
+              <div className="flex items-center gap-2 flex-wrap">
+                {['Visa', 'MC', 'Amex', 'PayPal', 'Shop Pay', 'Klarna', 'Affirm', 'Afterpay'].map((method) => (
                   <span
-                    key={card}
-                    className="text-[10px] text-white/20 border border-white/10 px-1.5 py-0.5 rounded"
+                    key={method}
+                    className={`text-[10px] border px-1.5 py-0.5 rounded ${
+                      method === 'Klarna'
+                        ? 'text-[#FFB3C7] border-[#FFB3C7]/30'
+                        : method === 'Affirm'
+                        ? 'text-white/40 border-white/20 italic font-semibold'
+                        : method === 'Afterpay'
+                        ? 'text-[#b2fce4] border-[#b2fce4]/30'
+                        : 'text-white/20 border-white/10'
+                    }`}
                   >
-                    {card}
+                    {method}
                   </span>
                 ))}
               </div>
