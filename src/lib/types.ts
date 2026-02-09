@@ -66,6 +66,30 @@ export interface Cart {
   subtotal: number;
 }
 
+export interface Customer {
+  id: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+  createdAt: string;
+  subscribedToOffers: boolean;
+}
+
+export interface Order {
+  id: string;
+  orderNumber: string;
+  date: string;
+  items: {
+    title: string;
+    variantTitle: string;
+    price: string;
+    quantity: number;
+    image: string;
+  }[];
+  subtotal: number;
+  status: 'processing' | 'shipped' | 'delivered';
+}
+
 export type SortOption = 'featured' | 'price-asc' | 'price-desc' | 'newest' | 'best-selling';
 
 export interface FilterState {

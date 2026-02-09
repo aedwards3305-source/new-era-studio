@@ -3,7 +3,6 @@
 import { useState, useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { AdjustmentsHorizontalIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import { mockProducts } from '@/data/products';
 import { ProductCard } from '@/components/shared/ProductCard';
 import { FilterSidebar } from './FilterSidebar';
 import { SortDropdown } from './SortDropdown';
@@ -16,7 +15,11 @@ const TYPE_MAP: Record<string, string[]> = {
   wigs: ['Wigs'],
 };
 
-export function ShopPageContent() {
+interface ShopPageContentProps {
+  products: Product[];
+}
+
+export function ShopPageContent({ products: allProducts }: ShopPageContentProps) {
   const searchParams = useSearchParams();
   const typeParam = searchParams.get('type');
   const sortParam = searchParams.get('sort');
@@ -37,7 +40,7 @@ export function ShopPageContent() {
   );
 
   const filteredProducts = useMemo(() => {
-    let products = [...mockProducts];
+    let products = [...allProducts];
 
     // Apply filters
     if (filters.productType.length > 0) {
@@ -181,7 +184,7 @@ export function ShopPageContent() {
             <FilterSidebar
               filters={filters}
               onChange={setFilters}
-              products={mockProducts}
+              products={allProducts}
             />
           </div>
 
@@ -211,7 +214,7 @@ export function ShopPageContent() {
       <FilterSidebar
         filters={filters}
         onChange={setFilters}
-        products={mockProducts}
+        products={allProducts}
         mobile
         open={mobileFiltersOpen}
         onClose={() => setMobileFiltersOpen(false)}

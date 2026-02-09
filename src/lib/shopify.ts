@@ -1,5 +1,5 @@
 import { Product, Collection } from './types';
-import { mockProducts, mockCollections } from '@/data/products';
+import { getProducts as getStoreProducts, getCollections as getStoreCollections } from './product-store';
 
 const domain = process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN;
 const storefrontAccessToken = process.env.NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN;
@@ -85,7 +85,7 @@ const PRODUCT_FRAGMENT = `
 `;
 
 export async function getAllProducts(): Promise<Product[]> {
-  if (!useShopify) return mockProducts;
+  if (!useShopify) return getStoreProducts();
 
   const query = `
     ${PRODUCT_FRAGMENT}
@@ -106,7 +106,8 @@ export async function getAllProducts(): Promise<Product[]> {
 
 export async function getProductByHandle(handle: string): Promise<Product | null> {
   if (!useShopify) {
-    return mockProducts.find((p) => p.handle === handle) || null;
+    const products = await getStoreProducts();
+    return products.find((p) => p.handle === handle) || null;
   }
 
   const query = `
@@ -127,7 +128,7 @@ export async function getProductByHandle(handle: string): Promise<Product | null
 }
 
 export async function getCollections(): Promise<Collection[]> {
-  if (!useShopify) return mockCollections;
+  if (!useShopify) return getStoreCollections();
 
   const query = `
     query GetCollections {
@@ -160,7 +161,8 @@ export async function getCollections(): Promise<Collection[]> {
 
 export async function getProductsByCollection(collectionHandle: string): Promise<Product[]> {
   if (!useShopify) {
-    const collection = mockCollections.find((c) => c.handle === collectionHandle);
+    const collections = await getStoreCollections();
+    const collection = collections.find((c) => c.handle === collectionHandle);
     return collection?.products || [];
   }
 

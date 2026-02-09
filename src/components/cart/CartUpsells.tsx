@@ -1,15 +1,24 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { useCart } from '@/context/CartContext';
-import { mockProducts } from '@/data/products';
 import { formatPrice } from '@/lib/utils';
+import { Product } from '@/lib/types';
 
 const UPSELL_HANDLES = ['lace-edge-band', 'silk-bonnet', 'lace-adhesive-kit'];
 
 export function CartUpsells() {
   const { addToCart, cart } = useCart();
+  const [products, setProducts] = useState<Product[]>([]);
 
-  const upsellProducts = mockProducts.filter(
+  useEffect(() => {
+    fetch('/api/products')
+      .then((res) => (res.ok ? res.json() : []))
+      .then((data: Product[]) => setProducts(data))
+      .catch(() => {});
+  }, []);
+
+  const upsellProducts = products.filter(
     (p) =>
       UPSELL_HANDLES.includes(p.handle) &&
       !cart.items.some((item) => item.handle === p.handle)

@@ -1,9 +1,10 @@
 import Link from 'next/link';
-import { mockProducts } from '@/data/products';
+import { getProducts } from '@/lib/product-store';
 import { ProductCard } from '@/components/shared/ProductCard';
 
-export function BestSellers() {
-  const bestSellers = mockProducts
+export async function BestSellers() {
+  const products = await getProducts();
+  const bestSellers = products
     .filter((p) => p.tags.includes('Best Seller'))
     .slice(0, 8);
 
