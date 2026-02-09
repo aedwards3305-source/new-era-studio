@@ -3,8 +3,9 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
 import { Dialog, Transition } from '@headlessui/react';
-import { XMarkIcon } from '@heroicons/react/24/outline';
+import { XMarkIcon, UserIcon } from '@heroicons/react/24/outline';
 import { NAV_LINKS, GLOSSGENIUS_BOOKING_URL, SITE_NAME } from '@/lib/constants';
+import { useAuth } from '@/context/AuthContext';
 
 interface MobileMenuProps {
   open: boolean;
@@ -12,6 +13,8 @@ interface MobileMenuProps {
 }
 
 export function MobileMenu({ open, onClose }: MobileMenuProps) {
+  const { isAuthenticated, customer } = useAuth();
+
   return (
     <Transition show={open} as={Fragment}>
       <Dialog onClose={onClose} className="relative z-[60]">
@@ -84,6 +87,18 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                   </Link>
                 </li>
               </ul>
+
+              {/* Account link */}
+              <div className="mt-4 pt-4 border-t border-brand-gray-100">
+                <Link
+                  href={isAuthenticated ? '/account' : '/account/login'}
+                  onClick={onClose}
+                  className="flex items-center gap-3 py-3 text-sm font-body font-medium tracking-wider uppercase text-brand-gray-700 hover:text-brand-black transition-colors"
+                >
+                  <UserIcon className="h-5 w-5" />
+                  {isAuthenticated ? `My Account` : 'Sign In'}
+                </Link>
+              </div>
             </nav>
 
             {/* Book Install CTA */}

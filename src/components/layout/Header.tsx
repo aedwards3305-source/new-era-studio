@@ -7,8 +7,10 @@ import {
   XMarkIcon,
   ShoppingBagIcon,
   MagnifyingGlassIcon,
+  UserIcon,
 } from '@heroicons/react/24/outline';
 import { useCart } from '@/context/CartContext';
+import { useAuth } from '@/context/AuthContext';
 import { NAV_LINKS, GLOSSGENIUS_BOOKING_URL, SITE_NAME } from '@/lib/constants';
 import { MobileMenu } from './MobileMenu';
 import { CartDrawer } from './CartDrawer';
@@ -17,6 +19,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { cart, isCartOpen, setIsCartOpen } = useCart();
+  const { isAuthenticated } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -115,6 +118,18 @@ export function Header() {
                   aria-label="Search products"
                 >
                   <MagnifyingGlassIcon className="h-5 w-5" />
+                </Link>
+
+                {/* Account */}
+                <Link
+                  href={isAuthenticated ? '/account' : '/account/login'}
+                  className="p-2 text-brand-gray-700 hover:text-brand-black transition-colors relative"
+                  aria-label={isAuthenticated ? 'My account' : 'Sign in'}
+                >
+                  <UserIcon className="h-5 w-5" />
+                  {isAuthenticated && (
+                    <span className="absolute top-1 right-1 h-2 w-2 bg-brand-gold rounded-full" />
+                  )}
                 </Link>
 
                 {/* Cart */}

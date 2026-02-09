@@ -31,7 +31,7 @@ export default function AboutPage() {
           <div className="relative mb-16 overflow-hidden bg-brand-cream">
             <div className="aspect-[16/10] lg:aspect-[16/8] relative">
               <Image
-                src="/images/founders.jpg"
+                src="/images/founders-2.png"
                 alt="Jasmine Beaton and Danielle Washington, Founders of New Era Studio"
                 fill
                 className="object-cover object-top"

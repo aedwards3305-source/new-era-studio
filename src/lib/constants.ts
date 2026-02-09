@@ -31,6 +31,7 @@ export const FOOTER_LINKS = {
     { label: 'FAQ', href: '/faq' },
     { label: 'Shipping & Returns', href: '/shipping-returns' },
     { label: 'Contact Us', href: '/contact' },
+    { label: 'My Account', href: '/account' },
     { label: 'Book Install', href: GLOSSGENIUS_BOOKING_URL },
   ],
   company: [

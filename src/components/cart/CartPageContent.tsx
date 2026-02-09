@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { MinusIcon, PlusIcon, TrashIcon } from '@heroicons/react/24/outline';
 import { useCart } from '@/context/CartContext';
+import { useAuth } from '@/context/AuthContext';
 import { formatPrice } from '@/lib/utils';
 import { BookInstallCTA } from '@/components/shared/BookInstallCTA';
 import { BookInstallModal } from '@/components/shared/BookInstallModal';
@@ -15,6 +16,7 @@ import { createCheckout } from '@/lib/shopify';
 
 export function CartPageContent() {
   const { cart, removeFromCart, updateQuantity, clearCart } = useCart();
+  const { isAuthenticated, addOrder } = useAuth();
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
   const [checkingOut, setCheckingOut] = useState(false);
 
@@ -38,6 +40,23 @@ export function CartPageContent() {
         localStorage.setItem('new-era-studio-last-order', orderRef);
       } catch {
         // ignore
+      }
+
+      // Save order to account if logged in
+      if (isAuthenticated) {
+        addOrder({
+          orderNumber: orderRef,
+          date: new Date().toISOString(),
+          items: cart.items.map((item) => ({
+            title: item.title,
+            variantTitle: item.variantTitle,
+            price: item.price,
+            quantity: item.quantity,
+            image: item.image.url,
+          })),
+          subtotal: cart.subtotal,
+          status: 'processing',
+        });
       }
 
       if (checkoutUrl.startsWith('/')) {
