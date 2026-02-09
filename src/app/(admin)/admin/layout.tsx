@@ -2,7 +2,7 @@ import { cookies } from 'next/headers';
 import { AdminSidebar } from '@/components/admin/AdminSidebar';
 
 export const metadata = {
-  title: 'Admin | New Era Studio',
+  title: 'Admin | New Era Studios',
 };
 
 export default function AdminLayout({

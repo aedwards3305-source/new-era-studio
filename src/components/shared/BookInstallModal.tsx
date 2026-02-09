@@ -118,7 +118,7 @@ export function BookInstallModal({ open, onClose }: BookInstallModalProps) {
                 </p>
                 <ol className="space-y-3">
                   {[
-                    'Purchase your hair from New Era Studio',
+                    'Purchase your hair from New Era Studios',
                     'Note your order number from confirmation email',
                     'Book your install appointment',
                     'Bring your hair to your appointment',

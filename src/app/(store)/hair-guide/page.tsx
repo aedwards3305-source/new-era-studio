@@ -5,7 +5,7 @@ import { GLOSSGENIUS_BOOKING_URL, SITE_NAME } from '@/lib/constants';
 export const metadata: Metadata = {
   title: 'Hair Buying Guide',
   description:
-    'Watch our expert guide on choosing the perfect virgin hair extensions, closures, and wigs. Tips from the founders of New Era Studio.',
+    'Watch our expert guide on choosing the perfect virgin hair extensions, closures, and wigs. Tips from the founders of New Era Studios.',
 };
 
 export default function HairGuidePage() {

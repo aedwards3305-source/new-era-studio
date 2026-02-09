@@ -1,4 +1,4 @@
-# New Era Studio — Setup Guide
+# New Era Studios — Setup Guide
 
 ## Architecture Decision
 
@@ -24,7 +24,7 @@ Why this approach:
 
 ```bash
 # 1. Navigate to project directory
-cd "New Era Studios"
+cd "New Era Studioss"
 
 # 2. Install dependencies
 npm install
@@ -51,7 +51,7 @@ The site runs immediately with mock product data. No Shopify account needed for 
 ### 2. Create Storefront API Access
 
 1. In Shopify Admin, go to **Settings > Apps and sales channels > Develop apps**
-2. Click **Create an app** → Name it "New Era Studio Storefront"
+2. Click **Create an app** → Name it "New Era Studios Storefront"
 3. Under **Configuration**, enable:
    - Storefront API access scopes:
      - `unauthenticated_read_product_listings`
@@ -83,7 +83,7 @@ Create products matching the data model. For each product:
 - Title (e.g., "Brazilian Straight Bundles")
 - Description (use copy deck below)
 - Product type: Bundles / Closures / Frontals / Wigs / Accessories
-- Vendor: "New Era Studio"
+- Vendor: "New Era Studios"
 - Tags: texture name, lace type, "Best Seller" or "New Arrival" as applicable
 - Variants: Create an option called "Length" with values (12", 14", etc.)
 - Set prices and compare-at prices for each variant
@@ -151,7 +151,7 @@ In Shopify Admin > Settings > Taxes and duties:
 # 1. Push to GitHub
 git init
 git add .
-git commit -m "Initial commit: New Era Studio eCommerce site"
+git commit -m "Initial commit: New Era Studios eCommerce site"
 git remote add origin https://github.com/YOUR_USERNAME/new-era-studio.git
 git push -u origin main
 
@@ -208,7 +208,7 @@ Add this block after the order details section:
 In Shopify Admin > Settings > Notifications > Abandoned checkout:
 
 Customize the email to include:
-- Subject: "Your New Era Studio cart is waiting"
+- Subject: "Your New Era Studios cart is waiting"
 - Add "Book Install" link alongside "Complete your order" CTA
 
 ---

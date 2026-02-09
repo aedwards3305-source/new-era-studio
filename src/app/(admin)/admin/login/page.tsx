@@ -37,7 +37,7 @@ export default function AdminLoginPage() {
     <div className="w-full max-w-sm mx-auto p-8">
       <div className="text-center mb-10">
         <h1 className="font-display text-3xl font-light text-white tracking-wide">
-          New Era Studio
+          New Era Studios
         </h1>
         <p className="text-sm text-brand-gray-400 font-body mt-2">
           Admin Login

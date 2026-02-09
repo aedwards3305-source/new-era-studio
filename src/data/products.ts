@@ -99,7 +99,7 @@ const product1: Product = {
     'Indulge in our premium Brazilian Straight Bundles, crafted from 100% virgin human hair. Silky smooth from root to tip, these bundles offer a sleek, polished finish that drapes beautifully and blends seamlessly with all textures. Minimal shedding, no tangling, and lasting luster through countless washes.',
   descriptionHtml:
     '<p>Indulge in our premium <strong>Brazilian Straight Bundles</strong>, crafted from 100% virgin human hair. Silky smooth from root to tip, these bundles offer a sleek, polished finish that drapes beautifully and blends seamlessly with all textures.</p><ul><li>100% unprocessed virgin hair</li><li>True-to-length bundles</li><li>Minimal shedding &amp; tangle-free</li><li>Can be colored, bleached &amp; heat-styled</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Bundles',
   tags: ['Straight', 'Bundles', 'Best Seller'],
   images: p1Images,
@@ -129,7 +129,7 @@ const product2: Product = {
     'Achieve effortless, red-carpet volume with our Body Wave Bundles. Each weft is hand-selected from ethically sourced virgin hair, delivering an S-shaped wave pattern that holds its bounce day after day. Perfect for those who crave dimension without the maintenance.',
   descriptionHtml:
     '<p>Achieve effortless, red-carpet volume with our <strong>Body Wave Bundles</strong>. Each weft is hand-selected from ethically sourced virgin hair, delivering an S-shaped wave pattern that holds its bounce day after day.</p><ul><li>Luxurious S-wave pattern</li><li>Double-weft for fullness</li><li>No synthetic blends</li><li>Heat-safe up to 400 &deg;F</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Bundles',
   tags: ['Body Wave', 'Bundles', 'Best Seller'],
   images: p2Images,
@@ -160,7 +160,7 @@ const product3: Product = {
     'Our Deep Wave Bundles deliver head-turning texture with a tight, defined wave pattern that exudes confidence. Made from 100% raw virgin hair, each bundle maintains its curl definition through washes and restyling. A show-stopping look for every occasion.',
   descriptionHtml:
     '<p>Our <strong>Deep Wave Bundles</strong> deliver head-turning texture with a tight, defined wave pattern that exudes confidence. Made from 100% raw virgin hair, each bundle maintains its curl definition through washes and restyling.</p><ul><li>Tight, defined deep-wave curl</li><li>Raw virgin hair &mdash; fully unprocessed</li><li>Weft reinforced to prevent shedding</li><li>Lasts 12+ months with proper care</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Bundles',
   tags: ['Deep Wave', 'Bundles'],
   images: p3Images,
@@ -190,7 +190,7 @@ const product4: Product = {
     'Embrace relaxed glamour with our Loose Wave Bundles. A gentle, cascading wave lends an air of effortless sophistication to any install. Lightweight, breathable wefts ensure all-day comfort while the virgin hair cuticles remain aligned for superior shine.',
   descriptionHtml:
     '<p>Embrace relaxed glamour with our <strong>Loose Wave Bundles</strong>. A gentle, cascading wave lends an air of effortless sophistication to any install. Lightweight, breathable wefts ensure all-day comfort while the virgin hair cuticles remain aligned for superior shine.</p><ul><li>Relaxed, flowing wave pattern</li><li>Cuticle-aligned virgin hair</li><li>Lightweight machine weft</li><li>Colors &amp; bleaches beautifully</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Bundles',
   tags: ['Loose Wave', 'Bundles'],
   images: p4Images,
@@ -221,7 +221,7 @@ const product5: Product = {
     'Make a splash with our Water Wave Bundles. This crimped wave texture mirrors the look of freshly wet curls, giving you a natural, voluminous style that turns heads. Premium virgin hair ensures tangle-free wear and easy maintenance from first install to last.',
   descriptionHtml:
     '<p>Make a splash with our <strong>Water Wave Bundles</strong>. This crimped wave texture mirrors the look of freshly wet curls, giving you a natural, voluminous style that turns heads.</p><ul><li>Crimped wet-look wave pattern</li><li>100% virgin human hair</li><li>Pre-plucked natural hairline</li><li>Easy to maintain &amp; restyle</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Bundles',
   tags: ['Water Wave', 'Bundles', 'New Arrival'],
   images: p5Images,
@@ -251,7 +251,7 @@ const product6: Product = {
     'Celebrate your natural texture with our Kinky Curly Bundles. This tight coil pattern mirrors 3C-4A curl types for the most authentic blend. Each bundle is densely packed for maximum volume, giving you a full, lush crown that commands attention.',
   descriptionHtml:
     '<p>Celebrate your natural texture with our <strong>Kinky Curly Bundles</strong>. This tight coil pattern mirrors 3C-4A curl types for the most authentic blend.</p><ul><li>Natural 3C-4A coil pattern</li><li>Dense weft for maximum volume</li><li>Ethically sourced virgin hair</li><li>Blends with natural hair seamlessly</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Bundles',
   tags: ['Kinky Curly', 'Bundles'],
   images: p6Images,
@@ -288,7 +288,7 @@ const product7: Product = {
     'Complete your install with our 4x4 HD Lace Closure in a sleek straight texture. The ultra-thin HD lace melts invisibly into any skin tone, creating the illusion of hair growing directly from your scalp. Free-part design allows versatile styling.',
   descriptionHtml:
     '<p>Complete your install with our <strong>4x4 HD Lace Closure</strong> in a sleek straight texture. The ultra-thin HD lace melts invisibly into any skin tone, creating the illusion of hair growing directly from your scalp.</p><ul><li>Invisible HD Swiss lace</li><li>Free-part versatility</li><li>Pre-plucked with baby hairs</li><li>Bleached knots included</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Closures',
   tags: ['Straight', '4x4 Closure', 'Closures', 'HD Lace'],
   images: p7Images,
@@ -323,7 +323,7 @@ const product8: Product = {
     'Elevate your body wave install with our 5x5 HD Lace Closure. The expanded parting space offers even more styling freedom, while the HD lace vanishes against the skin for a truly undetectable finish. Pre-plucked hairline with natural baby hairs included.',
   descriptionHtml:
     '<p>Elevate your body wave install with our <strong>5x5 HD Lace Closure</strong>. The expanded parting space offers even more styling freedom, while the HD lace vanishes against the skin for a truly undetectable finish.</p><ul><li>Wider 5x5 parting space</li><li>Body wave texture with lasting bounce</li><li>HD lace for all skin tones</li><li>Natural hairline &amp; baby hairs</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Closures',
   tags: ['Body Wave', '5x5 Closure', 'Closures', 'HD Lace'],
   images: p8Images,
@@ -361,7 +361,7 @@ const product9: Product = {
     'Our best-selling 13x4 HD Lace Frontal in straight texture delivers ear-to-ear coverage with an undetectable lace base. Style it swept back, side-parted, or center-parted -- the possibilities are limitless. This frontal is the foundation of a flawless sew-in.',
   descriptionHtml:
     '<p>Our best-selling <strong>13x4 HD Lace Frontal</strong> in straight texture delivers ear-to-ear coverage with an undetectable lace base. Style it swept back, side-parted, or center-parted &mdash; the possibilities are limitless.</p><ul><li>Ear-to-ear 13x4 coverage</li><li>HD Swiss lace melts on all skin tones</li><li>Pre-plucked &amp; bleached knots</li><li>100% virgin straight hair</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Frontals',
   tags: ['Straight', '13x4 Frontal', 'Frontals', 'HD Lace', 'Best Seller'],
   images: p9Images,
@@ -396,7 +396,7 @@ const product10: Product = {
     'Take your body wave install to the next level with our 13x6 HD Lace Frontal. The deep 6-inch parting space gives you the freedom to part deeply and sweep hair behind the ears for the most natural-looking results. Luxury-grade HD lace for an invisible melt.',
   descriptionHtml:
     '<p>Take your body wave install to the next level with our <strong>13x6 HD Lace Frontal</strong>. The deep 6-inch parting space gives you the freedom to part deeply and sweep hair behind the ears for the most natural-looking results.</p><ul><li>Deep 6-inch parting space</li><li>Body wave with natural movement</li><li>Transparent HD lace</li><li>Pre-plucked with baby hairs</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Frontals',
   tags: ['Body Wave', '13x6 Frontal', 'Frontals', 'HD Lace'],
   images: p10Images,
@@ -434,7 +434,7 @@ const product11: Product = {
     'Step into luxury with our HD Lace Front Wig in a sleek straight texture. Pre-styled on a 13x4 frontal cap, this wig is ready to wear straight out of the box. The HD lace front disappears into the skin for a seamless, natural hairline that fools everyone.',
   descriptionHtml:
     '<p>Step into luxury with our <strong>HD Lace Front Wig</strong> in a sleek straight texture. Pre-styled on a 13x4 frontal cap, this wig is ready to wear straight out of the box.</p><ul><li>13x4 HD lace front construction</li><li>Pre-plucked &amp; pre-styled</li><li>Adjustable straps &amp; combs for secure fit</li><li>150% density for natural fullness</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Wigs',
   tags: ['Straight', 'HD Lace', 'Wigs', '13x4 Frontal', 'Best Seller'],
   images: p11Images,
@@ -470,7 +470,7 @@ const product12: Product = {
     'Our newest innovation: a truly glueless HD lace wig in body wave texture. Features an upgraded elastic band and secure combs so you can skip the adhesive entirely. Beginner-friendly installation with a salon-quality finish -- just put it on and go.',
   descriptionHtml:
     '<p>Our newest innovation: a truly <strong>Glueless HD Lace Wig</strong> in body wave texture. Features an upgraded elastic band and secure combs so you can skip the adhesive entirely.</p><ul><li>Glueless design &mdash; no adhesive needed</li><li>Body wave with natural bounce</li><li>Upgraded elastic band &amp; combs</li><li>Beginner-friendly installation</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Wigs',
   tags: ['Body Wave', 'Glueless', 'Wigs', 'HD Lace', 'New Arrival'],
   images: p12Images,
@@ -506,7 +506,7 @@ const product13: Product = {
     'All the convenience of our glueless design meets the drama of deep wave texture. This wig delivers voluminous, defined curls without any of the hassle. Just secure, adjust, and slay. Perfect for protective styling that does not compromise on glamour.',
   descriptionHtml:
     '<p>All the convenience of our glueless design meets the drama of <strong>deep wave texture</strong>. This wig delivers voluminous, defined curls without any of the hassle.</p><ul><li>Glueless cap with secure fit system</li><li>Deep wave curl definition</li><li>HD lace for invisible melt</li><li>150% density for dramatic volume</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Wigs',
   tags: ['Deep Wave', 'Glueless', 'Wigs', 'HD Lace'],
   images: p13Images,
@@ -543,7 +543,7 @@ const product14: Product = {
     'Celebrate your crown with our HD Lace Front Wig in kinky curly texture. Crafted to mimic natural 3C-4A curl patterns, this wig delivers authentic volume and texture. The HD lace front ensures a seamless, undetectable hairline that lets your beauty shine.',
   descriptionHtml:
     '<p>Celebrate your crown with our <strong>HD Lace Front Wig</strong> in kinky curly texture. Crafted to mimic natural 3C-4A curl patterns, this wig delivers authentic volume and texture.</p><ul><li>Natural kinky curly pattern</li><li>13x4 HD lace front</li><li>Pre-plucked natural hairline</li><li>180% density for full, lush curls</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Wigs',
   tags: ['Kinky Curly', 'HD Lace', 'Wigs'],
   images: p14Images,
@@ -583,7 +583,7 @@ const product15: Product = {
     'Secure your lace and lay your edges to perfection with our Lace Edge Band. This elastic melt band applies even pressure around the hairline, helping your lace adhesive set flawlessly. A must-have accessory for every wig install.',
   descriptionHtml:
     '<p>Secure your lace and lay your edges to perfection with our <strong>Lace Edge Band</strong>. This elastic melt band applies even pressure around the hairline, helping your lace adhesive set flawlessly.</p><ul><li>Adjustable elastic band</li><li>Even pressure distribution</li><li>Works with all lace types</li><li>Reusable &amp; washable</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Accessories',
   tags: ['Accessories', 'Edges'],
   images: p15Images,
@@ -623,7 +623,7 @@ const product16: Product = {
     'Protect your investment while you sleep with our premium Silk Bonnet. The luxurious silk interior reduces friction, prevents frizz, and preserves your style overnight. Wide elastic band ensures a comfortable, stay-put fit all night long.',
   descriptionHtml:
     '<p>Protect your investment while you sleep with our premium <strong>Silk Bonnet</strong>. The luxurious silk interior reduces friction, prevents frizz, and preserves your style overnight.</p><ul><li>100% mulberry silk interior</li><li>Wide elastic band &mdash; stays put all night</li><li>Oversized to fit all hair lengths</li><li>Extends the life of your install</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Accessories',
   tags: ['Accessories', 'Bonnet', 'Best Seller'],
   images: p16Images,
@@ -663,7 +663,7 @@ const product17: Product = {
     'Everything you need for a secure, long-lasting lace install in one convenient kit. Includes our waterproof lace glue, scalp protector, and precision applicator. Formulated for sensitive skin with a hold that lasts up to two weeks.',
   descriptionHtml:
     '<p>Everything you need for a secure, long-lasting lace install in one convenient kit. Includes our waterproof lace glue, scalp protector, and precision applicator.</p><ul><li>Waterproof lace adhesive</li><li>Scalp protector spray</li><li>Precision applicator tip</li><li>Up to 2-week hold</li></ul>',
-  vendor: 'New Era Studio',
+  vendor: 'New Era Studios',
   productType: 'Accessories',
   tags: ['Accessories', 'Adhesive'],
   images: p17Images,
@@ -751,7 +751,7 @@ export const mockCollections: Collection[] = [
     handle: 'best-sellers',
     title: 'Best Sellers',
     description:
-      'Our most-loved products, chosen by the New Era Studio community. These are the pieces our clients come back for again and again.',
+      'Our most-loved products, chosen by the New Era Studios community. These are the pieces our clients come back for again and again.',
     image: placeholderImage('col-best-sellers', 'Best Sellers', 3),
     products: bestSellerProducts,
   },
@@ -760,7 +760,7 @@ export const mockCollections: Collection[] = [
     handle: 'new-arrivals',
     title: 'New Arrivals',
     description:
-      'The latest additions to the New Era Studio lineup. Be the first to experience our newest textures and innovations.',
+      'The latest additions to the New Era Studios lineup. Be the first to experience our newest textures and innovations.',
     image: placeholderImage('col-new-arrivals', 'New Arrivals', 1),
     products: newArrivalProducts,
   },

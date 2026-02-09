@@ -1,4 +1,4 @@
-export const SITE_NAME = 'New Era Studio';
+export const SITE_NAME = 'New Era Studios';
 export const SITE_DESCRIPTION = 'Premium virgin hair extensions, wigs, and closures. Luxury quality at accessible prices.';
 
 export const GLOSSGENIUS_BOOKING_URL =

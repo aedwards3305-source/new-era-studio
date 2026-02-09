@@ -6,7 +6,7 @@ import { GLOSSGENIUS_BOOKING_URL, SITE_NAME } from '@/lib/constants';
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    'Meet Jasmine Beaton and Danielle Washington, the founders of New Era Studio — delivering premium virgin hair extensions with exceptional quality and service.',
+    'Meet Jasmine Beaton and Danielle Washington, the founders of New Era Studios — delivering premium virgin hair extensions with exceptional quality and service.',
 };
 
 export default function AboutPage() {
@@ -22,7 +22,7 @@ export default function AboutPage() {
             <h1 className="heading-lg lg:heading-xl mb-6">About {SITE_NAME}</h1>
             <p className="text-base lg:text-lg font-body text-brand-gray-500 leading-relaxed max-w-2xl mx-auto">
               Founded by two women who believe every woman deserves to feel confident and
-              beautiful, New Era Studio brings you premium virgin hair extensions that
+              beautiful, New Era Studios brings you premium virgin hair extensions that
               elevate your look without compromise.
             </p>
           </div>
@@ -31,7 +31,7 @@ export default function AboutPage() {
           <div className="relative mb-16 overflow-hidden bg-brand-cream">
             <Image
               src="/images/founders-2.png"
-              alt="Jasmine Beaton and Danielle Washington, Founders of New Era Studio"
+              alt="Jasmine Beaton and Danielle Washington, Founders of New Era Studios"
               width={1200}
               height={1200}
               className="w-full h-auto"
@@ -77,7 +77,7 @@ export default function AboutPage() {
                 </p>
                 <p className="text-sm font-body text-brand-gray-600 leading-relaxed">
                   Danielle&apos;s vision for accessibility and exceptional customer experience
-                  drives the heart of New Era Studio. She believes luxury shouldn&apos;t be
+                  drives the heart of New Era Studios. She believes luxury shouldn&apos;t be
                   exclusive — and works tirelessly to make premium hair accessible to every
                   woman, paired with professional install services that complete the look.
                 </p>
@@ -90,7 +90,7 @@ export default function AboutPage() {
             <div>
               <h2 className="heading-sm mb-4">Our Mission</h2>
               <p className="text-sm font-body text-brand-gray-600 leading-relaxed mb-4">
-                At New Era Studio, we&apos;re more than a hair brand — we&apos;re a beauty
+                At New Era Studios, we&apos;re more than a hair brand — we&apos;re a beauty
                 destination. Jasmine and Danielle founded this brand with a simple belief:
                 every woman should have access to premium quality hair without the premium
                 price tag.

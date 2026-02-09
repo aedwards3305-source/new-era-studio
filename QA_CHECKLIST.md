@@ -1,4 +1,4 @@
-# New Era Studio — QA Checklist
+# New Era Studios — QA Checklist
 
 ## Reference Site Behavioral Matching
 

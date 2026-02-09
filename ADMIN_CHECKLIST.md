@@ -1,11 +1,11 @@
-# New Era Studio — Admin Configuration Checklist
+# New Era Studios — Admin Configuration Checklist
 
 ## Pre-Launch Checklist
 
 ### Store Setup
 - [ ] Create Shopify store
 - [ ] Choose and activate plan
-- [ ] Set store name to "New Era Studio"
+- [ ] Set store name to "New Era Studios"
 - [ ] Upload logo and favicon
 - [ ] Set store currency to USD
 - [ ] Configure timezone

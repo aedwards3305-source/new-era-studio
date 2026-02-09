@@ -22,7 +22,7 @@ const testimonials = [
     name: 'Crystal A.',
     location: 'Brooklyn, NY',
     rating: 5,
-    text: 'I was nervous ordering hair online, but New Era Studio exceeded every expectation. The glueless wig fit perfectly and the customer service was top-notch.',
+    text: 'I was nervous ordering hair online, but New Era Studios exceeded every expectation. The glueless wig fit perfectly and the customer service was top-notch.',
     product: 'Glueless HD Lace Wig',
   },
   {

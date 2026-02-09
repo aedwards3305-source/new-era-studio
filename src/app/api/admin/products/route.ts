@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
       title: body.title,
       description: body.description || '',
       descriptionHtml: body.descriptionHtml || `<p>${body.description || ''}</p>`,
-      vendor: 'New Era Studio',
+      vendor: 'New Era Studios',
       productType: body.productType,
       tags: body.tags || [],
       images: body.images || [],

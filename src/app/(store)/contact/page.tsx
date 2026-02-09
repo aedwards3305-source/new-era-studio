@@ -4,7 +4,7 @@ import { GLOSSGENIUS_BOOKING_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Get in touch with the New Era Studio team. We typically respond within 24 hours.',
+  description: 'Get in touch with the New Era Studios team. We typically respond within 24 hours.',
 };
 
 export default function ContactPage() {

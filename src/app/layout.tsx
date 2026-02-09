@@ -5,8 +5,8 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'New Era Studio | Premium Virgin Hair Extensions & Wigs',
-    template: '%s | New Era Studio',
+    default: 'New Era Studios | Premium Virgin Hair Extensions & Wigs',
+    template: '%s | New Era Studios',
   },
   description:
     'Shop premium virgin hair extensions, HD lace wigs, closures, and frontals. Brazilian and Indian hair in all textures. Free shipping on orders over $150.',
@@ -20,19 +20,19 @@ export const metadata: Metadata = {
     'straight hair bundles',
     'deep wave hair',
     'glueless wigs',
-    'New Era Studio',
+    'New Era Studios',
   ],
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'New Era Studio',
-    title: 'New Era Studio | Premium Virgin Hair Extensions & Wigs',
+    siteName: 'New Era Studios',
+    title: 'New Era Studios | Premium Virgin Hair Extensions & Wigs',
     description:
       'Shop premium virgin hair extensions, HD lace wigs, closures, and frontals. Free shipping on orders over $150.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'New Era Studio | Premium Virgin Hair Extensions & Wigs',
+    title: 'New Era Studios | Premium Virgin Hair Extensions & Wigs',
     description:
       'Shop premium virgin hair extensions, HD lace wigs, closures, and frontals.',
   },

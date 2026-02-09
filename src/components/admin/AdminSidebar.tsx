@@ -30,7 +30,7 @@ export function AdminSidebar() {
       <div className="p-6 border-b border-white/10">
         <Link href="/admin" className="block">
           <h1 className="font-display text-xl font-light tracking-wide">
-            New Era Studio
+            New Era Studios
           </h1>
           <p className="text-xs text-brand-gray-400 mt-1 font-body tracking-wider uppercase">
             Admin Panel

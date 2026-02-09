@@ -1,4 +1,4 @@
-# New Era Studio — Copy Deck
+# New Era Studios — Copy Deck
 
 ## Brand Tone
 - **Luxurious but accessible** — Premium quality without pretension
@@ -138,7 +138,7 @@ Complete your look with a professional install. Purchase your hair, then book yo
 ---
 
 ## Social Media Bio
-**New Era Studio** | Premium Virgin Hair Extensions & Wigs
+**New Era Studios** | Premium Virgin Hair Extensions & Wigs
 Shop Hair ↓ Book Install ↓
 🔗 newerastudio.com
 
@@ -152,7 +152,7 @@ Shop Hair ↓ Book Install ↓
 3. "Meet Our Best Sellers"
 
 ### Abandoned Cart
-1. "Your New Era Studio cart is waiting"
+1. "Your New Era Studios cart is waiting"
 2. "Don't miss out — your hair is selling fast"
 3. "Still thinking? Here's free shipping on us"
 

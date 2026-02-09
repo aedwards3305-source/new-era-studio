@@ -63,10 +63,10 @@ export function Hero() {
 
               {/* Hero image */}
               <div className="relative hidden lg:block">
-                <div className="aspect-[3/4] rounded-sm overflow-hidden">
+                <div className="aspect-[3/4] rounded-3xl overflow-hidden">
                   <Image
                     src="/images/founders.jpg"
-                    alt="Jasmine Beaton and Danielle Washington, founders of New Era Studio"
+                    alt="Jasmine Beaton and Danielle Washington, founders of New Era Studios"
                     fill
                     className="object-cover object-top"
                     priority
