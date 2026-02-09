@@ -74,7 +74,7 @@ export function Header() {
               </Link>
 
               {/* Right actions */}
-              <div className="flex items-center gap-3 lg:gap-5">
+              <div className="flex items-center gap-1 sm:gap-3 lg:gap-5">
                 {/* Desktop-only nav links */}
                 <div className="hidden lg:flex items-center gap-8 mr-6">
                   {NAV_LINKS.slice(4).map((link) => (
@@ -98,12 +98,12 @@ export function Header() {
                   Book Install
                 </a>
 
-                {/* Instagram */}
+                {/* Instagram - hidden on small mobile to prevent overlap with logo */}
                 <a
                   href="https://www.instagram.com/thenewera.studios"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 text-brand-gray-700 hover:text-brand-black transition-colors"
+                  className="hidden sm:block p-2 text-brand-gray-700 hover:text-brand-black transition-colors"
                   aria-label="Follow us on Instagram"
                 >
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -111,10 +111,10 @@ export function Header() {
                   </svg>
                 </a>
 
-                {/* Search */}
+                {/* Search - hidden on small mobile to prevent overlap with logo */}
                 <Link
                   href="/shop"
-                  className="p-2 text-brand-gray-700 hover:text-brand-black transition-colors"
+                  className="hidden sm:block p-2 text-brand-gray-700 hover:text-brand-black transition-colors"
                   aria-label="Search products"
                 >
                   <MagnifyingGlassIcon className="h-5 w-5" />
