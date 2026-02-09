@@ -5,19 +5,19 @@ const collections = [
     title: 'Bundles',
     subtitle: 'Virgin Hair Bundles',
     href: '/shop?type=bundles',
-    gradient: 'from-[#1a1510] to-[#2d2318]',
+    gradient: 'from-[#3d302b] to-[#5c4038]',
   },
   {
     title: 'Closures & Frontals',
     subtitle: 'HD Lace Closures',
     href: '/shop?type=closures-frontals',
-    gradient: 'from-[#15131a] to-[#2d2345]',
+    gradient: 'from-[#4a3a35] to-[#6b4e45]',
   },
   {
     title: 'Wigs',
     subtitle: 'HD Lace Wigs',
     href: '/shop?type=wigs',
-    gradient: 'from-[#1a1515] to-[#352020]',
+    gradient: 'from-[#3a2d2a] to-[#5a403a]',
   },
 ];
 
@@ -42,13 +42,13 @@ export function FeaturedCollections() {
               <div className={`absolute inset-0 bg-gradient-to-br ${col.gradient} transition-transform duration-700 group-hover:scale-105`} />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
               <div className="relative h-full flex flex-col items-center justify-center text-white p-8">
-                <p className="text-xs font-body tracking-[0.3em] uppercase text-brand-gold mb-3">
+                <p className="text-xs font-body tracking-[0.3em] uppercase text-brand-peach-200 mb-3">
                   {col.subtitle}
                 </p>
                 <h3 className="font-display text-3xl lg:text-4xl font-light">
                   {col.title}
                 </h3>
-                <span className="mt-6 text-xs font-body tracking-widest uppercase border-b border-white/30 pb-1 group-hover:border-brand-gold group-hover:text-brand-gold transition-colors">
+                <span className="mt-6 text-xs font-body tracking-widest uppercase border-b border-white/30 pb-1 group-hover:border-brand-peach-200 group-hover:text-brand-peach-200 transition-colors">
                   Shop Now
                 </span>
               </div>

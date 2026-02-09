@@ -4,7 +4,7 @@ import { NewsletterSignup } from './NewsletterSignup';
 
 export function Footer() {
   return (
-    <footer className="bg-brand-black text-white" role="contentinfo">
+    <footer className="bg-gradient-to-b from-[#2d2926] to-[#1c1917] text-white" role="contentinfo">
       {/* Newsletter section */}
       <div className="border-b border-white/10">
         <div className="section-padding">

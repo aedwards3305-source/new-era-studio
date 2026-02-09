@@ -6,13 +6,13 @@ import type { Product, ProductImage, ProductVariant, Collection } from '@/lib/ty
 
 function placeholderImage(id: string, label: string, colorIndex: number): ProductImage {
   const colors: [string, string][] = [
-    ['#1a1a1a', '#3d3d3d'], // dark
-    ['#2d2318', '#5c4a35'], // warm brown
-    ['#1a1520', '#3d2d45'], // dark purple
-    ['#201a15', '#4a3828'], // chocolate
+    ['#3d302b', '#5c4038'], // warm rose-brown
+    ['#4a3530', '#6b4e45'], // peach-toned brown
+    ['#2d2926', '#4a3a35'], // soft espresso
+    ['#3a2d2a', '#5a403a'], // dusty mauve-brown
   ];
   const [c1, c2] = colors[colorIndex % colors.length];
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:${c1}"/><stop offset="100%" style="stop-color:${c2}"/></linearGradient></defs><rect width="800" height="800" fill="url(#g)"/><text x="400" y="420" text-anchor="middle" fill="#c9a96e" font-family="Georgia" font-size="28">${label}</text></svg>`;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:${c1}"/><stop offset="100%" style="stop-color:${c2}"/></linearGradient></defs><rect width="800" height="800" fill="url(#g)"/><text x="400" y="420" text-anchor="middle" fill="#f5c6aa" font-family="Georgia" font-size="28">${label}</text></svg>`;
   return {
     id,
     url: `data:image/svg+xml,${encodeURIComponent(svg)}`,

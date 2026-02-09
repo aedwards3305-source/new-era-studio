@@ -187,7 +187,7 @@ In Shopify Admin > Settings > Notifications > Order confirmation:
 Add this block after the order details section:
 
 ```html
-<div style="background-color: #0a0a0a; color: #ffffff; padding: 40px 30px; text-align: center; margin-top: 30px;">
+<div style="background-color: #2d2926; color: #ffffff; padding: 40px 30px; text-align: center; margin-top: 30px;">
   <h2 style="font-family: Georgia, serif; font-size: 24px; font-weight: 300; margin-bottom: 10px;">
     Complete Your Look
   </h2>
@@ -195,7 +195,7 @@ Add this block after the order details section:
     Book a professional install with our experienced stylists. Have your order number ready!
   </p>
   <a href="https://newerastudios.glossgenius.com/booking-flow"
-     style="display: inline-block; background-color: #c9a96e; color: #0a0a0a; padding: 12px 30px;
+     style="display: inline-block; background-color: #b07a4e; color: #2d2926; padding: 12px 30px;
             font-family: system-ui, sans-serif; font-size: 12px; font-weight: 600;
             letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none;">
     Book Your Install
@@ -228,7 +228,7 @@ In Shopify Admin > Settings > Checkout > Order status page > Additional scripts:
     '<h3 style="font-family:Georgia,serif;font-size:20px;margin-bottom:8px;">Book Your Install</h3>' +
     '<p style="font-size:13px;color:#666;margin-bottom:15px;">Complete your transformation with a professional install.</p>' +
     '<a href="https://newerastudios.glossgenius.com/booking-flow" target="_blank" ' +
-    'style="display:inline-block;background:#c9a96e;color:#0a0a0a;padding:10px 25px;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;">' +
+    'style="display:inline-block;background:#b07a4e;color:#2d2926;padding:10px 25px;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;">' +
     'Book Install Now</a></div>'
   );
 </script>
