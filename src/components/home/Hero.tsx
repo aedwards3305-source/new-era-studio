@@ -72,9 +72,6 @@ export function Hero() {
                     priority
                   />
                 </div>
-                {/* Decorative elements */}
-                <div className="absolute -bottom-6 -left-6 w-24 h-24 border border-brand-peach-200/15" />
-                <div className="absolute -top-6 -right-6 w-16 h-16 bg-brand-peach-200/8" />
               </div>
             </div>
           </div>
