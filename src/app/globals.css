@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-body text-brand-black bg-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  ::selection {
+    @apply bg-brand-gold/30 text-brand-black;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-3.5
+           bg-brand-black text-white font-body text-sm font-medium tracking-wider uppercase
+           transition-all duration-300 hover:bg-brand-gold hover:text-brand-black
+           focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-3.5
+           border border-brand-black text-brand-black font-body text-sm font-medium tracking-wider uppercase
+           transition-all duration-300 hover:bg-brand-black hover:text-white
+           focus:outline-none focus:ring-2 focus:ring-brand-black focus:ring-offset-2;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center px-8 py-3.5
+           bg-brand-gold text-brand-black font-body text-sm font-medium tracking-wider uppercase
+           transition-all duration-300 hover:bg-brand-gold-dark
+           focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+
+  .section-width {
+    @apply max-w-8xl mx-auto;
+  }
+
+  .heading-xl {
+    @apply font-display text-display-xl font-light tracking-tight;
+  }
+
+  .heading-lg {
+    @apply font-display text-display-lg font-light tracking-tight;
+  }
+
+  .heading-md {
+    @apply font-display text-display-md font-light;
+  }
+
+  .heading-sm {
+    @apply font-display text-display-sm font-light;
+  }
+
+  .product-card {
+    @apply relative;
+  }
+
+  .product-card-image {
+    @apply aspect-square overflow-hidden bg-brand-gray-100;
+  }
+
+  .product-card-image img {
+    @apply w-full h-full object-cover transition-transform duration-700;
+  }
+
+  .filter-checkbox {
+    @apply h-4 w-4 rounded-none border-brand-gray-300 text-brand-black
+           focus:ring-brand-gold focus:ring-offset-0;
+  }
+
+  .input-field {
+    @apply w-full border border-brand-gray-300 px-4 py-3 font-body text-sm
+           placeholder:text-brand-gray-400
+           focus:border-brand-black focus:outline-none focus:ring-0
+           transition-colors duration-200;
+  }
+
+  .link-underline {
+    @apply relative inline-block after:absolute after:bottom-0 after:left-0
+           after:h-px after:w-0 after:bg-current after:transition-all after:duration-300
+           hover:after:w-full;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Smooth page transitions */
+@media (prefers-reduced-motion: no-preference) {
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar for desktop */
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #d4d4d4;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a3a3a3;
+  }
+}
