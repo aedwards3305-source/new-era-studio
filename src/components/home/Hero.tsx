@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { GLOSSGENIUS_BOOKING_URL } from '@/lib/constants';
 
@@ -60,18 +61,16 @@ export function Hero() {
                 </div>
               </div>
 
-              {/* Hero image placeholder */}
+              {/* Hero image */}
               <div className="relative hidden lg:block">
-                <div className="aspect-[3/4] rounded-sm overflow-hidden bg-gradient-to-br from-[#4a3530] via-[#5c4038] to-[#3d302b]">
-                  <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(245,198,170,0.1),_transparent_70%)]" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-32 h-32 rounded-full border border-brand-peach-200/30 flex items-center justify-center mx-auto mb-6">
-                        <span className="font-display text-4xl text-brand-peach-200/50 italic">NE</span>
-                      </div>
-                      <p className="text-sm text-white/20 font-body tracking-wider">Hero Image</p>
-                    </div>
-                  </div>
+                <div className="aspect-[3/4] rounded-sm overflow-hidden">
+                  <Image
+                    src="/images/founders.jpg"
+                    alt="Jasmine Beaton and Danielle Washington, founders of New Era Studio"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
                 </div>
                 {/* Decorative elements */}
                 <div className="absolute -bottom-6 -left-6 w-24 h-24 border border-brand-peach-200/15" />
