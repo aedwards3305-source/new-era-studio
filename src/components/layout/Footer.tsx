@@ -38,7 +38,7 @@ export function Footer() {
               </p>
               <div className="mt-6 flex gap-4">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/thenewera.studios"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/40 hover:text-brand-gold transition-colors"
