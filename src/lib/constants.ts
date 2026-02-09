@@ -12,6 +12,7 @@ export const NAV_LINKS = [
   { label: 'Bundles', href: '/shop?type=bundles' },
   { label: 'Closures & Frontals', href: '/shop?type=closures-frontals' },
   { label: 'Wigs', href: '/shop?type=wigs' },
+  { label: 'Hair Guide', href: '/hair-guide' },
   { label: 'About', href: '/about' },
   { label: 'FAQ', href: '/faq' },
 ];
@@ -25,6 +26,7 @@ export const FOOTER_LINKS = {
     { label: 'Best Sellers', href: '/shop?sort=best-selling' },
   ],
   help: [
+    { label: 'Hair Guide', href: '/hair-guide' },
     { label: 'FAQ', href: '/faq' },
     { label: 'Shipping & Returns', href: '/shipping-returns' },
     { label: 'Contact Us', href: '/contact' },
